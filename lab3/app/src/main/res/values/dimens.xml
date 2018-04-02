@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="normalTextSize">20sp</dimen>
+    <dimen name="initialSize">26sp</dimen>
+    <dimen name="normalMargin">10dp</dimen>
+    <dimen name="dTextSize">18sp</dimen>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="巴拉拉能量~变基佬！"
+        android:textSize="32dp"
+        android:layout_margin="10dp"
+        android:textColor="#82CEEB"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#82CEEB"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="10dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="姓名："
+                style="@style/dialog"/>
+            <TextView
+                android:id="@+id/log_name"
+                style="@style/dialog"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="生日："
+                style="@style/dialog"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/log_birthday"
+                android:layout_weight="8"/>
+            <TextView android:layout_weight="1"/>
+        </TableRow>
+        <TableRow
+            android:layout_marginTop="10dp">
+            <TextView
+                android:text="礼物："
+                style="@style/dialog"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_weight="8"
+                android:id="@+id/log_gift"/>
+            <TextView android:layout_weight="1"/>
+        </TableRow>
+        <TableRow android:paddingBottom="30dp">
+            <TextView
+                android:text="电话："
+                style="@style/dialog"
+                android:textColor="#16A951"
+                android:layout_marginTop="30dp"
+                />
+            <TextView
+                style="@style/dialog"
+                android:textColor="#16A951"
+                android:layout_marginTop="30dp"
+                android:layout_weight="8"
+                android:id="@+id/phoneNum"/>
+            <TextView
+                android:layout_weight="1"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

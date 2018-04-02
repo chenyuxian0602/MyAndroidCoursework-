@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="Names">"Aaron","Elvis","David","Edwin","Frank","Joshua","Ivan","Mark","Joseph","Phoebe"</string>
+    <string name="Phones">"17715523654","18825653224","15052116654","18854211875","13955188541","13621574410","15684122771","17765213579","13315466578","17895466428"</string>
+    <string name="Types">"手机","手机","手机","手机","手机","手机","手机","手机","手机","手机"</string>
+    <string name="Locations">"江苏苏州电信","广东揭阳移动","江苏无锡移动","山东青岛移动","安徽合肥移动","江苏苏州移动","山东烟台联通","广东珠海电信","河北石家庄电信","山东东营移动"</string>
+    <string name="Backgrounds">"BB4C3B","c48d30","4469b0","20A17B","BB4C3B","c48d30","4469b0","20A17B","BB4C3B","c48d30"</string>
+</resources>

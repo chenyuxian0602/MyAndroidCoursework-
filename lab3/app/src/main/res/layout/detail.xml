@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toptop"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageButton
+            android:id="@+id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src ="@drawable/back"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back" />
+        <TextView
+            android:id="@+id/dname"
+            android:layout_alignLeft="@id/returnBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorInitial"
+            android:textSize="@dimen/normalTextSize"
+            android:layout_marginBottom="@dimen/normalMargin"
+            android:text="Android"
+            android:layout_alignParentBottom="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/dname"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/empty_star"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/phoneNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:textColor="@color/colorItemText"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="@dimen/normalMargin"
+            android:text="13714653989"/>
+        <TextView
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorFrom"
+            android:text="手机  山东青岛移动"
+            android:layout_below="@+id/phoneNum"
+            android:layout_alignStart="@+id/phoneNum" />
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/chat"
+            android:layout_alignBottom="@id/from"
+            android:layout_alignTop="@id/phoneNum"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/normalMargin"/>
+        <TextView
+            android:id="@+id/cut0"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/msg"
+            android:layout_alignBottom="@id/from"
+            android:layout_alignTop="@id/phoneNum"
+            android:background="@color/colorCutLine"/>
+
+
+        <TextView
+            android:id="@+id/cut1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/normalMargin"
+            android:background="@color/colorCutLine"
+            android:layout_below="@id/from"/>
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="更多资料"
+            android:layout_below="@id/cut1"
+            style="@style/detailStyle"
+            android:textSize="@dimen/normalTextSize"/>
+        <TextView
+            android:id="@+id/cut2"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_margin="@dimen/normalMargin"
+            android:background="@color/colorCutLine"
+            android:layout_below="@id/more"/>
+        <TextView
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑联系人"
+            android:layout_below="@id/cut2"
+            style="@style/detailStyle"/>
+        <TextView
+            android:id="@+id/cut3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/normalMargin"
+            android:background="@color/colorCutLine"
+            android:layout_below="@id/reset"/>
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分享联系人"
+            android:layout_below="@id/cut3"
+            style="@style/detailStyle"/>
+        <TextView
+            android:id="@+id/cut4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/normalMargin"
+            android:background="@color/colorCutLine"
+            android:layout_below="@id/share"/>
+        <TextView
+            android:id="@+id/lose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入黑名单"
+            android:layout_below="@id/cut4"
+            style="@style/detailStyle"/>
+        <TextView
+            android:id="@+id/cut5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/normalMargin"
+            android:background="@color/colorCutLine"
+            android:layout_below="@id/lose"/>
+        <TextView
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="删除联系人"
+            android:layout_below="@id/cut5"
+            style="@style/detailStyle"/>
+        <TextView
+            android:id="@+id/cut6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_margin="@dimen/normalMargin"
+            android:background="@color/colorCutLine"
+            android:layout_below="@id/delete"/>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

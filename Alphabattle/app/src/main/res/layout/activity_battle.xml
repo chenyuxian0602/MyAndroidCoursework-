@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_battle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alphabattle.BattleActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/alpha_background"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/scoreLayout"
+            android:background="@drawable/login_btn"
+            android:padding="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="score:"
+                android:textSize="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:text="0"
+                android:textSize="50dp"
+                android:textStyle="bold"
+                android:fontFamily="serif"
+                android:id="@+id/score"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/note"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:textSize="25dp"
+            android:text="@string/note"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tableqq"
+            android:layout_below="@id/scoreLayout"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/login_btn"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="40dp"
+                android:textColor="#fff"
+                android:textStyle="bold|italic"
+                android:gravity="center"
+                android:id="@+id/table"
+                android:layout_marginLeft="10dp"/>
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:background="@drawable/back_btn"
+                android:layout_marginRight="10dp"
+                android:id="@+id/backbtn"/>
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableqq"
+            android:layout_marginTop="20dp"
+            android:id="@+id/tableLayout">
+            <TableRow
+                android:gravity="center">
+                <Button style="@style/AlphaBtn"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/b1"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b2"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b3"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b4"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b5"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+                <Button style="@style/AlphaBtn"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/b6"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b7"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b8"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b9"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b10"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b11"/>
+            </TableRow>
+            <TableRow
+                android:layout_marginTop="5dp"
+                android:gravity="center">
+                <Button style="@style/AlphaBtn"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/b12"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b13"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b14"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b15"/>
+                <Button style="@style/AlphaBtn"
+                    android:id="@+id/b16"/>
+            </TableRow>
+        </TableLayout>
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_btn"
+            android:textColor="#fff"
+            android:text="apply"
+            android:textSize="30dp"
+            android:id="@+id/applyBtn"/>
+    </RelativeLayout>
+</RelativeLayout>
